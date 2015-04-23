@@ -3,7 +3,7 @@
 This library allows you to publish videos to multiple video sharing websites. 
 
 Currently Under Development. 
-Support for Youtube and Vimeo in currently in development.
+Support for Youtube and Vimeo currently in development.
 
 ## Example Usage
 ```php
