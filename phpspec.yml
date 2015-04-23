@@ -1,0 +1,4 @@
+suites:
+  publisher_suite:
+    namespace: VideoPublisher
+    src_path: src

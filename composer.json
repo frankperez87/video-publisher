@@ -1,0 +1,13 @@
+{
+  "autoload": {
+    "psr-4": {
+      "VideoPublisher\\": "src/VideoPublisher"
+    }
+  },
+  "require-dev": {
+    "phpspec/phpspec": "~2.2"
+  },
+  "require": {
+    "google/apiclient": "~1.1"
+  }
+}
