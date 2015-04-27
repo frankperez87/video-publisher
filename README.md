@@ -11,6 +11,7 @@ Support for Youtube and Vimeo currently in development.
 
 require 'vendor/autoload.php';
 
+// Setup a Video for Publishing
 $video = new VideoPublisher\Video;
 $video->setPath('/path/to/video.mp4');
 $video->setTitle('Test Video Title');
@@ -21,12 +22,12 @@ $video->setTags([
     'Video Tag 2',
 ]);
 
+// Setup the Google Account for Publishing Videos
 $google_account = new VideoPublisher\Account;
 $google_account->setClientId('TEST'); // Set Client ID
 $google_account->setClientSecret('TEST');  // Set Client Secret Key
 
-$youtube = new VideoPublisher\Services\Google($google_account);
-
+// Post Video to the Provided Publisher Account
 VideoPublisher\Publish::setPublisher($google_account)->publish($video);
 
 ```
