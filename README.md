@@ -27,7 +27,10 @@ $google_account = new VideoPublisher\Account;
 $google_account->setClientId('TEST'); // Set Client ID
 $google_account->setClientSecret('TEST');  // Set Client Secret Key
 
+// Setup Youtube Publisher
+$youtube = new VideoPublisher\Services\Google($google_account);
+
 // Post Video to the Provided Publisher Account
-VideoPublisher\Publish::setPublisher($google_account)->publish($video);
+VideoPublisher\Publish::setPublisher($youtube)->publish($video);
 
 ```
